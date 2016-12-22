@@ -1,3 +1,0 @@
-{"posts": {!! $posts->map(function ($post) {
-    return $post->api();
-}) !!} }

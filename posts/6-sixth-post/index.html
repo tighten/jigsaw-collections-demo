@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body class="border-t-3 border-primary full-height">
+
+        <nav class="navbar navbar-brand">
+            <div class="container">
+                <div class="navbar-content">
+                    <div>
+                        <a class="link-plain text-xxl flex-y-center" href="/">
+                            <strong>Jigsaw Collections Demo</strong>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container m-xs-b-6">
+            <div class="row">
+
+                <div class="col-xs-4">
+                    <nav class="nav-list">
+    <a class="nav-list-item selected" href="/posts">
+        <icon></icon>Posts
+    </a>
+
+    <a class="nav-list-item " href="/paginated">
+        <icon></icon>Pagination
+    </a>
+
+    <a class="nav-list-item " href="/categories/news">
+        <icon></icon>Categories
+    </a>
+
+    <a class="nav-list-item " href="/people">
+        <icon></icon>People
+    </a>
+
+    <a class="nav-list-item " href="/variables">
+        <icon></icon>Variables
+    </a>
+
+    <a class="nav-list-item " href="/json-test.json">
+        <icon></icon>JSON
+    </a>
+
+    <a class="nav-list-item " href="/text-test.txt">
+        <icon></icon>Text
+    </a>
+
+    <a class="nav-list-item " href="/config-dump">
+        <icon></icon>Config
+    </a>
+</nav>
+                    <div class="panel m-xs-t-6">
+    <div class="panel-heading">
+        <h4 class="text-sm wt-light text-uppercase text-brand">Page meta</h4>
+    </div>
+
+    <div class="panel-body">
+        <div class="p-xs-b-4 border-b">
+            <p class="text-xs text-dark-soft text-uppercase">Filename:</p>
+            <p class="p-xs-l-2 text-sm">6-sixth-post</p>
+        </div>
+
+        <div class="p-xs-y-4 border-b">
+            <p class="text-xs text-dark-soft text-uppercase">Extension:</p>
+            <p class="p-xs-l-2 text-sm">blade.php</p>
+        </div>
+
+        <div class="p-xs-y-4 border-b">
+            <p class="text-xs text-dark-soft text-uppercase">Path:</p>
+            <p class="p-xs-l-2 text-sm">/posts/6-sixth-post</p>
+        </div>
+
+        <div class="p-xs-y-4 border-b">
+            <p class="text-xs text-dark-soft text-uppercase">BASE URL:</p>
+            <p class="p-xs-l-2 text-sm">http://jigsaw-collections.dev</p>
+        </div>
+
+        <div class="p-xs-y-4 border-b">
+            <p class="text-xs text-dark-soft text-uppercase">URL:</p>
+            <p class="p-xs-l-2 text-sm">http://jigsaw-collections.dev/posts/6-sixth-post</p>
+        </div>
+
+        <div class="p-xs-t-4">
+            <p class="text-xs text-dark-soft text-uppercase">Global Variable:</p>
+            <p class="p-xs-l-2 text-sm">some global variable</p>
+        </div>
+    </div>
+</div>
+                                    </div>
+
+                <div class="col-xs-8 demo-page">
+                        <h4 class="text-uppercase text-dark-soft wt-light">
+        Collection Name: <strong>posts</strong>
+        <br>
+        Total Posts: <strong>6</strong>
+    </h4>
+
+    <br>
+
+    <h1>My Sixth Post</h1>
+
+    <p><small>By Default Author · 06/01/2016 </small></p>
+
+    <div class="border-t border-b p-xs-t-6 m-xs-b-6">
+        <p class="text-xs text-dark-soft">References to adjacent collection items:</p>
+
+        <div class="row">
+            <div class="col-xs-6 text-left">
+
+                                <p><a href="/posts/5-fifth-post">
+                    <icon class="chevron_left m-xs-r-2"></icon>
+                    My Fifth Post
+                </a></p>
+                
+            </div>
+
+            <div class="col-xs-6 text-right">
+
+                
+            </div>
+        </div>
+    </div>
+
+    
+
+<div class="panel p-xs-4 m-xs-y-4">
+    <h4>Test of YAML Frontmatter in a Blade post:</h4>
+    Title: <em>My Sixth Post</em><br>
+    Author: <em>Default Author</em><br>
+    Category: <em>faq</em><br>
+    Number: <em>1</em>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, placeat saepe, voluptatibus dignissimos expedita quae et sit quia ipsa error blanditiis delectus at consequatur doloremque ratione nesciunt commodi nihil temporibus.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos tempora nostrum veritatis neque aliquam earum. Rerum accusamus repudiandae esse tempore doloribus necessitatibus natus ut ea, asperiores deserunt sequi cupiditate repellendus!</p>
+
+
+    <div class="border-t border-b m-xs-t-6 p-xs-y-6">
+        <p class="text-xs text-dark-soft">User-defined helper function <code>preview()</code> from <code>collections.php</code>, invoked at the item level:</p>
+
+        <p class="text-sm"><em> ...</em></p>
+    </div>
+
+    
+    <div class="border-b p-xs-y-6">
+        <p class="text-xs text-dark-soft">Access a Jigsaw Collection as Illuminate Collection</p>
+
+        <h4>Related <a href="/categories/faq"><em>faq</em></a> posts:</h4>
+
+        <div class="row">
+                        <div class="col-xs-9 col-xs-offset-3 p-xs-y-2 border-b">
+                <a href="/posts/3-third-post">My Third Post</a>:
+                <em>...</em>
+            </div>
+                        <div class="col-xs-9 col-xs-offset-3 p-xs-y-2 border-b">
+                <a href="/posts/4-fourth-post">My Fourth Post</a>:
+                <em>
+    A Blade/Markdown hybrid.
+
+This filename ends ...</em>
+            </div>
+                    </div>
+    </div>
+
+    <div class="border-b p-xs-y-6">
+        <p class="text-xs text-dark-soft">Dump of <code>$item</code> (can also be accessed as singular version of collection name, i.e. <code>$post</code>)</p>
+        <pre><code>{
+    &quot;author&quot;: &quot;Default Author&quot;,
+    &quot;section&quot;: &quot;content&quot;,
+    &quot;extends&quot;: &quot;_layouts.post&quot;,
+    &quot;title&quot;: &quot;My Sixth Post&quot;,
+    &quot;date&quot;: 1464739200,
+    &quot;number&quot;: 1,
+    &quot;category&quot;: &quot;faq&quot;,
+    &quot;_source&quot;: &quot;\/Users\/damiani\/Code\/jigsaw-collections-demo\/source\/_posts&quot;,
+    &quot;collection&quot;: &quot;posts&quot;,
+    &quot;filename&quot;: &quot;6-sixth-post&quot;,
+    &quot;extension&quot;: &quot;blade.php&quot;,
+    &quot;path&quot;: [
+        &quot;\/posts\/6-sixth-post&quot;
+    ],
+    &quot;url&quot;: [
+        &quot;http:\/\/jigsaw-collections.dev\/posts\/6-sixth-post&quot;
+    ],
+    &quot;_previousItem&quot;: &quot;5-fifth-post&quot;,
+    &quot;_nextItem&quot;: null
+}</code></pre>
+    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<!DOCTYPE html>
