@@ -12,7 +12,7 @@
             <div class="container">
                 <div class="navbar-content">
                     <div>
-                        <a class="link-plain text-xxl flex-y-center" href="/">
+                        <a class="link-plain text-xxl flex-y-center" href="{{ $config->baseUrl }}">
                             <strong>Jigsaw Collections Demo</strong>
                         </a>
                     </div>
