@@ -20,7 +20,7 @@
             <div class="col-xs-6 text-left">
 
                 @if ($item->getPrevious())
-                <p><a href="{{ $item->getPrevious()->path }}">
+                <p><a href="{{ $item->getPrevious()->url }}">
                     <icon class="chevron_left m-xs-r-2"></icon>
                     {{ $item->getPrevious()->title }}
                 </a></p>
@@ -31,7 +31,7 @@
             <div class="col-xs-6 text-right">
 
                 @if ($item->getNext())
-                <p><a href="{{ $item->getNext()->path }}">
+                <p><a href="{{ $item->getNext()->url }}">
                     {{ $item->getNext()->title }}
                     <icon class="chevron_right m-xs-l-2"></icon>
                 </a></p>
@@ -62,12 +62,12 @@
     <div class="border-b p-xs-y-6">
         <p class="text-xs text-dark-soft">Access a Jigsaw Collection as Illuminate Collection</p>
 
-        <h4>Related <a href="/categories/{{ $item->category }}"><em>{{ $item->category }}</em></a> posts:</h4>
+        <h4>Related <a href="{{ $config->baseUrl }}/categories/{{ $item->category }}"><em>{{ $item->category }}</em></a> posts:</h4>
 
         <div class="row">
             @foreach($posts->except($item->filename)->where('category', $item->category) as $post)
             <div class="col-xs-9 col-xs-offset-3 p-xs-y-2 border-b">
-                <a href="{{ $post->path }}">{{ $post->title }}</a>:
+                <a href="{{ $post->url }}">{{ $post->title }}</a>:
                 <em>{{ $post->preview(50) }}...</em>
             </div>
             @endforeach

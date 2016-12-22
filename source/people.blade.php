@@ -19,7 +19,7 @@
         <div class="p-xs-y-4 border-b">
             <h3>
                 @if ($person->path)
-                    <a href="{{ $person->path }}">{{ $person->name }}</a>
+                    <a href="{{ $person->url }}">{{ $person->name }}</a>
                 @else
                     {{ $person->name }}
                 @endif
@@ -28,8 +28,8 @@
             <p>Filename (meta): {{ $person->filename }}</p>
 
             @if ($person->path)
-            <p>Path (WEB): <a href="{{ $person->path->web }}">{{ $person->path->web }}</a></p>
-            <p>Path (API): <a href="{{ $person->path->api }}">{{ $person->path->api }}</a></p>
+            <p>Path (WEB): <a href="{{ $person->url->web }}">{{ $person->path->web }}</a></p>
+            <p>Path (API): <a href="{{ $person->url->api }}">{{ $person->path->api }}</a></p>
             @endif
 
 

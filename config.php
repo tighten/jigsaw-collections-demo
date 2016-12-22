@@ -9,7 +9,7 @@ return [
      *    - if defined, the `$url` variable will append this to the `$path` value for
      *      collection items, resulting in a fully-qualified URL for links
      */
-    'baseUrl' => 'http://jigsaw-collections.dev',
+    'baseUrl' => 'https://tightenco.github.io/jigsaw-collections-demo',
 
     /**
      * Helper functions

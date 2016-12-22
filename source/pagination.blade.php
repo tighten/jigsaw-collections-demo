@@ -21,20 +21,20 @@ testvar: Successful!
         </div>
         <div class="col-xs-6 text-right">
             @if ($previous = $pagination->previous)
-                <a href="{{ $pagination->first }}"><icon class="chevron_left tight"></icon><icon class="chevron_left tight"></icon></a>
-                <a href="{{ $previous }}"><icon class="chevron_left m-xs-x-3"></icon></a>
+                <a href="{{ $config->baseUrl }}{{ $pagination->first }}"><icon class="chevron_left tight"></icon><icon class="chevron_left tight"></icon></a>
+                <a href="{{ $config->baseUrl }}{{ $previous }}"><icon class="chevron_left m-xs-x-3"></icon></a>
             @else
                 <icon class="chevron_left disabled tight"></icon><icon class="chevron_left disabled tight"></icon>
                 <icon class="chevron_left disabled m-xs-x-3"></icon>
             @endif
 
             @foreach ($pagination->pages as $number => $page)
-                <a href="{{ $page }}" class="pagination__number {{ $pagination->currentPage == $number ? 'selected' : '' }}">{{ $number }}</a>
+                <a href="{{ $config->baseUrl }}{{ $page }}" class="pagination__number {{ $pagination->currentPage == $number ? 'selected' : '' }}">{{ $number }}</a>
             @endforeach
 
             @if ($next = $pagination->next)
-                <a href="{{ $next }}"><icon class="chevron_right m-xs-x-3"></icon></a>
-                <a href="{{ $pagination->last }}"><icon class="chevron_right tight"></icon><icon class="chevron_right tight"></icon></a>
+                <a href="{{ $config->baseUrl }}{{ $next }}"><icon class="chevron_right m-xs-x-3"></icon></a>
+                <a href="{{ $config->baseUrl }}{{ $pagination->last }}"><icon class="chevron_right tight"></icon><icon class="chevron_right tight"></icon></a>
             @else
                 <icon class="chevron_right disabled m-xs-x-3"></icon>
                 <icon class="chevron_right disabled tight"></icon><icon class="chevron_right disabled tight"></icon>
@@ -46,7 +46,7 @@ testvar: Successful!
 @foreach ($pagination->items as $post)
 <div class="row">
     <div class="col-xs-12">
-        <h3><a href="{{ $post['path'] }}">{{ $post['title'] }}</a></h3>
+        <h3><a href="{{ $post['url'] }}">{{ $post['title'] }}</a></h3>
         <p class="text-sm">by {{ $post->author }} · {{ $post->date_formatted() }} · Number {{ $post->number }}</p>
         <div class="p-xs-b-6 border-b">{!! $post->getContent() !!}</div>
     </div>
