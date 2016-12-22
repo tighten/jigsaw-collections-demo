@@ -1,0 +1,20 @@
+@bg-light: @color-white;
+@bg-soft: @color-gray-lightest;
+@bg-muted: @color-gray-lighter;
+@bg-dark: @color-black;
+@bg-brand-soft: fade(@color-brand-primary, 35%);
+@bg-brand-muted: fade(@color-brand-primary, 15%);
+
+.bg-light   { background-color: @bg-light; }
+.bg-soft    { background-color: @bg-soft; }
+.bg-muted   { background-color: @bg-muted; }
+.bg-dark    { background-color: @bg-dark; }
+
+.bg-brand-soft  { background-color: @bg-brand-soft; }
+.bg-brand-muted { background-color: @bg-brand-muted; }
+
+.bg-hero {
+    background-image: url("/img/hero-bg.png");
+    background-size: 800px;
+    background-position: center;
+}

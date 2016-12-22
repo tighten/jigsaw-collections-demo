@@ -1,0 +1,25 @@
+.panel {
+    border: 1px solid @border-color;
+    border-radius: @border-radius;
+}
+.panel-heading {
+    padding: @spacer-2 @spacer-4;
+    background-color: @bg-soft;
+    border-bottom: 1px solid @border-color;
+    border-radius: @border-radius @border-radius 0 0;
+}
+.panel-body {
+    padding: @spacer-4;
+    background-color: @bg-light;
+    border-radius: @border-radius;
+}
+
+.panel-danger {
+    border-color: lighten(@color-danger, 25%);
+
+    .panel-heading {
+        color: @color-danger;
+        background-color: lighten(@color-danger, 35%);
+        border-color: lighten(@color-danger, 25%);
+    }
+}

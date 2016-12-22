@@ -1,0 +1,120 @@
+.demo-page {
+    h2 {
+        margin-bottom: @spacer-4;
+        font-size: @font-size-jumbo;
+        font-weight: @font-weight-medium;
+    }
+
+    h3 {
+        margin-top: @spacer-2;
+        margin-bottom: @spacer-4;
+        font-size: @font-size-xlarge;
+        font-weight: @font-weight-medium;
+    }
+
+    p {
+        margin-bottom: @spacer-4;
+    }
+
+    a {
+        .link-brand;
+    }
+
+    blockquote {
+        margin-bottom: @spacer-4;
+        padding: @spacer-1 @spacer-4;
+        color: @text-dark-soft;
+        border-left: .25rem solid @color-gray-light;
+        > p {
+            margin: 0;
+        }
+    }
+
+    code {
+        display: inline-block;
+        padding-left: @spacer-1;
+        padding-right: @spacer-1;
+        font-size: @font-size-small;
+        background-color: @color-gray-lighter;
+    }
+
+    pre {
+        margin-top: @spacer-4;
+        margin-bottom: @spacer-4;
+        padding: @spacer-2 @spacer-4;
+        line-height: 1.75;
+        background-color: @color-gray-lighter;
+        white-space: pre-wrap;
+        > code {
+            display: inline;
+            padding: 0;
+            background: none;
+        }
+    }
+
+    ol, ul {
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+    }
+    ol {
+        list-style-type: decimal;
+    }
+    ul {
+        list-style-type: disc;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    icon {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        background-color: @color-brand-primary;
+
+        &.chevron_right {
+            mask-image: url('/images/chevron_right.svg');
+        }
+
+        &.chevron_left {
+            mask-image: url('/images/chevron_right.svg');
+            transform: scaleX(-1);
+        }
+
+        &.tight {
+            margin: 0 -3px;
+        }
+
+        &.disabled {
+            background-color: @color-gray-light;
+        }
+    }
+
+    .pagination__number {
+        border-radius: 50%;
+        border: 1px solid @color-gray;
+        bottom: 2px;
+        color: @color-gray;
+        display: inline-block;
+        font-size: .7em;
+        height: 20px;
+        line-height: 18px;
+        margin: 0 2px;
+        position: relative;
+        text-align: center;
+        width: 20px;
+
+        &:hover {
+            color: @color-brand-primary;
+            border-color: @color-brand-primary;
+            text-decoration: none;
+        }
+
+        &.selected {
+            border-color: @color-brand-primary;
+            background-color: @color-brand-primary;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.list-group {
+}
+.list-group-item {
+    display: block;
+    padding: @spacer-2 @spacer-4;
+    background: @bg-light;
+    border: @border-1 solid @border-color;
+
+    transition: transform .3s ease;
+
+    + .list-group-item {
+        margin-top: -1px;
+    }
+
+    &:last-child {
+        border: none;
+    }
+
+    &.is-expanded {
+        position: relative;
+        z-index: @z-index-2;
+        margin: 2rem -1.5rem;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+}
+a.list-group-item:hover,
+.is-clickable.list-group-item:hover {
+    background-color: @bg-muted;
+    text-decoration: none;
+    cursor: pointer;
+}

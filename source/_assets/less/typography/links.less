@@ -1,0 +1,59 @@
+a {
+    color: @text-dark;
+    font-weight: @font-weight-normal;
+    text-decoration: none;
+
+    &:hover, &:focus {
+        color: darken(@text-dark, 15%);
+        text-decoration: underline;
+    }
+    &:focus {
+        .tab-focus;
+    }
+}
+
+.link-brand {
+    color: @color-brand-primary;
+
+    &:hover, &:focus {
+        color: darken(@color-brand-primary, 15%);
+    }
+}
+
+.link-tighten {
+    color: @color-tighten;
+
+    &:hover, &:focus {
+        color: darken(@color-tighten, 15%);
+    }
+}
+
+.link-plain {
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
+.link-soft {
+    color: @text-dark-soft;
+
+    &:hover, &:focus {
+        color: @text-dark;
+    }
+}
+
+.link-muted {
+    color: @text-dark-muted;
+
+    &:hover, &:focus {
+        color: @text-dark;
+    }
+}
+
+.link-light-muted {
+    color: @text-light-muted;
+
+    &:hover, &:focus {
+        color: @text-light-soft;
+    }
+}

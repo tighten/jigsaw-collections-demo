@@ -1,0 +1,145 @@
+@button-border-radius: @border-radius;
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-weight: @font-weight-normal;
+    line-height: 1.25;
+    border-radius: @button-border-radius;
+    cursor: pointer;
+
+    &:focus, &:hover {
+        text-decoration: none;
+    }
+
+    &:active, &:focus {
+        .tab-focus;
+    }
+
+    &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.btn-sm {
+    // @todo: To match nav icon size, prob should revisit
+    padding: (8.5em / 14em) 1.5em;
+    font-size: @font-size-small;
+}
+
+.btn-lg {
+    font-size: @font-size-large;
+}
+
+.btn-xs {
+    padding: @spacer-1;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: @font-size-small;
+}
+
+.btn-wide {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-primary {
+    .button-variant(@text-light; @color-brand-primary);
+}
+
+.btn-primary-outline {
+    .button-outline-variant(@text-light; @color-brand-primary);
+}
+
+.btn-danger {
+    .button-outline-variant(@text-light; @color-danger);
+}
+
+.btn-link {
+    font-weight: @font-weight-normal;
+    color: @text-dark;
+    background-color: transparent;
+
+    &:focus, &:hover {
+        color: darken(@text-dark, 15%);
+        text-decoration: underline;
+    }
+}
+
+.btn-pad-lg {
+    padding: @spacer-2 @spacer-4;
+}
+
+.btn-loading {
+    position: relative;
+    color: transparent !important;
+    pointer-events: none;
+    &:after {
+        position: absolute !important;
+        display: block;
+        height: 1rem;
+        width: 1rem;
+        top: 50%;
+        left: 50%;
+        margin-left: -0.5rem;
+        margin-top: -0.5rem;
+        border: 2px solid @text-dark;
+        border-radius: 0.5rem;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        animation: spin-around 500ms infinite linear;
+        content: "";
+    }
+}
+
+.button-variant(@color; @background) {
+    @active-background: darken(desaturate(@background, 0%), 10%);
+
+    color: @color;
+    background-color: @background;
+    border: 1px solid @background;
+
+    &:active, &:hover {
+        color: @color;
+        background-color: @active-background;
+        border-color: @active-background;
+    }
+
+    &:disabled {
+        &:active, &:hover {
+            background-color: @background;
+            border-color: @background;
+        }
+    }
+
+    &.btn-loading:after {
+        border-left-color: fade(@color, 70%);
+        border-bottom-color: fade(@color, 70%);
+    }
+}
+
+.button-outline-variant(@color; @border) {
+    @inactive-border: lighten(@border, 0%);
+
+    color: @border;
+    background-color: transparent;
+    border: 1px solid @inactive-border;
+
+    &:active, &:hover {
+        color: @color !important;
+        background-color: @border;
+        border-color: @border;
+    }
+
+    &:disabled {
+        &:active, &:hover {
+            border-color: @inactive-border;
+        }
+    }
+}
