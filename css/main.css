@@ -1929,8 +1929,8 @@ a.list-group-item:hover,
   height: 12px;
   width: 12px;
   margin-right: 5px;
-  -webkit-mask-image: url('/images/chevron_right.svg');
-  mask-image: url('/images/chevron_right.svg');
+  -webkit-mask-image: url('/jigsaw-collections-demo/images/chevron_right.svg');
+  mask-image: url('/jigsaw-collections-demo/images/chevron_right.svg');
 }
 .nav-list-item:hover {
   background-color: #faf7fa;
@@ -2016,12 +2016,12 @@ a.list-group-item:hover,
   background-color: #ba43ae;
 }
 .demo-page icon.chevron_right {
-  -webkit-mask-image: url('/images/chevron_right.svg');
-  mask-image: url('/images/chevron_right.svg');
+  -webkit-mask-image: url('/jigsaw-collections-demo/images/chevron_right.svg');
+  mask-image: url('/jigsaw-collections-demo/images/chevron_right.svg');
 }
 .demo-page icon.chevron_left {
-  -webkit-mask-image: url('/images/chevron_right.svg');
-  mask-image: url('/images/chevron_right.svg');
+  -webkit-mask-image: url('/jigsaw-collections-demo/images/chevron_right.svg');
+  mask-image: url('/jigsaw-collections-demo/images/chevron_right.svg');
   transform: scaleX(-1);
 }
 .demo-page icon.tight {
