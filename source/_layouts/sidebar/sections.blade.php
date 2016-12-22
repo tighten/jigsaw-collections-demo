@@ -7,7 +7,7 @@
         <icon></icon>Pagination
     </a>
 
-    <a class="nav-list-item {{ $config->selected('category') ? 'selected' : '' }}" href="{{ $config->baseUrl }}/categories/news">
+    <a class="nav-list-item {{ $config->selected('categories') ? 'selected' : '' }}" href="{{ $config->baseUrl }}/categories/news">
         <icon></icon>Categories
     </a>
 

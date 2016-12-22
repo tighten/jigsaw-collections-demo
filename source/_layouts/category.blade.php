@@ -13,7 +13,7 @@
             <h2>
 
                 @foreach ($posts->pluck('category')->unique() as $category)
-                <a class="btn btn-primary-outline btn-sm m-xs-l-2 text-uppercase" href="/categories/{{ $category }}">{{ $category }}</a>
+                <a class="btn btn-primary-outline btn-sm m-xs-l-2 text-uppercase" href="{{ $config->baseUrl }}/categories/{{ $category }}">{{ $category }}</a>
                 @endforeach
 
             </h2>
