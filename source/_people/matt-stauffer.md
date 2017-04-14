@@ -5,7 +5,6 @@ role: CTO
 date: 2016-04-01
 extends:
     web: _layouts.person
-linkTypes: web
 ---
 
 ## Biography:

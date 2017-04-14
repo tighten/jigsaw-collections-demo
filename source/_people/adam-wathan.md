@@ -5,7 +5,6 @@ role: Developer
 extends:
   web: _layouts.person
   api: _layouts.api.person
-linkTypes: web, api
 date: 5/16/2016
 ---
 

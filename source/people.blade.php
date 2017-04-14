@@ -18,8 +18,8 @@
         @foreach ($people as $person)
         <div class="p-xs-y-4 border-b">
             <h3>
-                @if ($person->path)
-                    <a href="{{ $person->url }}">{{ $person->name }}</a>
+                @if ($person->getPath())
+                    <a href="{{ $person->getPath() }}">{{ $person->name }}</a>
                 @else
                     {{ $person->name }}
                 @endif
@@ -27,15 +27,13 @@
 
             <p>Filename (meta): {{ $person->filename }}</p>
 
-            @if ($person->path)
-            <p>Path (WEB): <a href="{{ $person->url->web }}">{{ $person->path->web }}</a></p>
-            <p>Path (API): <a href="{{ $person->url->api }}">{{ $person->path->api }}</a></p>
+            @if ($person->getPath())
+                <p>Path (WEB): <a href="{{ $person->getUrl('web') }}">{{ $person->getPath('web') }}</a></p>
+                <p>Path (API): <a href="{{ $person->getUrl('api') }}">{{ $person->getPath('api') }}</a></p>
             @endif
 
-
-            <p>Entry types: ({{ $person->path ? $person->path->count() : '0' }}) {{ $person->pathTypes }}</p>
             <p>Role (frontmatter): {{ collect($person->role)->implode(', ') }}</p>
-            <p>Using global helper function: {{ $config->global_preview($person->getContent()) }}</p>
+            <p>Using global helper function: {{ $page->preview($person->getContent()) }}</p>
         </div>
         @endforeach
 
@@ -54,8 +52,8 @@
     <div class="col-xs-6">
         <blockquote>Can reference collection-specific helper functions when sorting:</blockquote>
 
-        @foreach ($people->sortByDesc(function($person) { return $person->number_doubled(); }) as $person)
-            <h3>{{ $person->name }} ({{ $person->number_doubled() }})</h3>
+        @foreach ($people->sortByDesc(function($person) { return $person->numberDoubled(); }) as $person)
+            <h3>{{ $person->name }} ({{ $person->numberDoubled() }})</h3>
         @endforeach
 
     </div>

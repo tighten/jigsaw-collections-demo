@@ -1,1 +1,1 @@
-Included <strong>Blade</strong> file (with a global variable: <em>{{ $config->global_variable }}</em>)
+Included <strong>Blade</strong> file (with a global variable: <em>{{ $page->global_variable }}</em>)

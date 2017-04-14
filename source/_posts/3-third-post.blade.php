@@ -8,7 +8,7 @@ category: faq
 ---
 @section('content')
 
-<p>This file, named <strong>{{ $title }}</strong>, ends in <code>blade.php</code>, and therefore gets processed as by the Blade parser. It does not get parsed as a Markdown file.</p>
+<p>This file, named <strong>{{ $page->title }}</strong>, ends in <code>blade.php</code>, and therefore gets processed as by the Blade parser. It does not get parsed as a Markdown file.</p>
 
 <p><em>NOTE: Blade-only collection items do not have a <code>getContent()</code> value at the moment. So functions that rely on it, such as the user-defined <code>preview()</code> function, will not return anything for now.</em></p>
 

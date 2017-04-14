@@ -31,9 +31,3 @@ class UberParsedown extends Parsedown implements MarkdownParser
 }
 
 $container->bind(MarkdownParser::class, UberParsedown::class);
-
-// Build path can be customized:
-// $buildPath = getcwd() . '/build-to-another-location';
-
-// Source path can be customized:
-// $sourcePath = getcwd() . '/some-other-source';

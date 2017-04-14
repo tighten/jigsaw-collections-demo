@@ -14,7 +14,7 @@ some_variable: Blade
 
 This filename ends with `blade.md` and is processed by both the Blade parser (first) and then the Markdown parser (second).
 
-So you can mix `{{ strtoupper($post->some_variable) }}` and `Markdown` directives in the same file.
+So you can mix `{{ strtoupper($page->some_variable) }}` and `Markdown` directives in the same file.
 
 > Note that in `blade.md` files, `section` can be omitted (as it can in any `.md` file).
 

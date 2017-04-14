@@ -3,7 +3,6 @@ name: Dave Hicking
 number: 123
 role: Director of Operations
 date: 2016-08-01
-linkTypes: none
 ---
 
 ## Dave's biography:

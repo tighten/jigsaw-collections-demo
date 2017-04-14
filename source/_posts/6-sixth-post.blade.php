@@ -7,13 +7,12 @@ category: faq
 ---
 @section('content')
 
-
 <div class="panel p-xs-4 m-xs-y-4">
     <h4>Test of YAML Frontmatter in a Blade post:</h4>
-    Title: <em>{{ $item->title }}</em><br>
-    Author: <em>{{ $item->author }}</em><br>
-    Category: <em>{{ $category }}</em><br>
-    Number: <em>{{ $post->number }}</em>
+    Title: <em>{{ $page->title }}</em><br>
+    Author: <em>{{ $page->author }}</em><br>
+    Category: <em>{{ $page->category }}</em><br>
+    Number: <em>{{ $page->number }}</em>
 </div>
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, placeat saepe, voluptatibus dignissimos expedita quae et sit quia ipsa error blanditiis delectus at consequatur doloremque ratione nesciunt commodi nihil temporibus.</p>

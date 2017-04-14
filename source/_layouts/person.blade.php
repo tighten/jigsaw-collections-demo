@@ -3,7 +3,7 @@
 @section('body')
 <header>
     <h2>Person</h2>
-    <h3>{{ $item->name }}</h3>
+    <h3>{{ $page->name }}</h3>
 </header>
 
 @yield('content')

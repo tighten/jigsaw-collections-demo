@@ -9,8 +9,8 @@ local: stored in the YAML header
 
         - It is reachable at the URL `/text-test.txt`
 
-        - It can contain global variables: {{ $config->global_variable }}
+        - It can contain global variables: {{ $page->global_variable }}
 
-        - ...or local variables: {{ $local }}
+        - ...or local variables: {{ $page->local }}
 
 @endsection

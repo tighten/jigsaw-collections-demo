@@ -8,8 +8,6 @@ date: 2016-02-01
 extends:
     web: _layouts.person
     api: _layouts.api.person
-linkTypes: web, api
-
 ---
 
 ## Dan's biography:

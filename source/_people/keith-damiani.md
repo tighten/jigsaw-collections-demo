@@ -4,10 +4,8 @@ section: content
 number: 12
 role: Developer
 date: 2016-03-01
-linkTypes: web
 extends:
     web: _layouts.person
-
 ---
 
 ## Keith's biography:

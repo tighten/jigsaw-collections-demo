@@ -1,6 +1,6 @@
 @extends('_layouts.master')
 
 @section('body')
-    <h2>{{ $title }}</h2>
+    <h2>{{ $page->title }}</h2>
     @yield('content')
 @endsection
