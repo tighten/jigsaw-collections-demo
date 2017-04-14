@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/main.css?v1.1">
     </head>
     <body class="border-t-3 border-primary full-height">
 
@@ -12,8 +12,8 @@
             <div class="container">
                 <div class="navbar-content">
                     <div>
-                        <a class="link-plain text-xxl flex-y-center" href="/">
-                            <strong>Jigsaw Collections Demo</strong>
+                        <a class="link-plain text-xl flex-y-center" href="/">
+                            <img class="logo" src="/images/jigsaw-logo-440.png" width="220"><span class="text-xxl text-light wt-xlight">/&nbsp;</span>Collections Demo
                         </a>
                     </div>
                 </div>
