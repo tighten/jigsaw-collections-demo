@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'http://jigsaw-collections-demo.tighten.co',
+    'baseUrl' => 'http://tightenco.github.io/jigsaw-collections-demo',
     'global_variable' => 'some global variable',
     'global_array' => [
         1, 2, 3
